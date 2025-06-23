@@ -1,0 +1,7 @@
+CREATE TABLE purchase (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    user_id BIGINT NOT NULL,
+    status VARCHAR(20) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT fk_purchase_user FOREIGN KEY (user_id) REFERENCES user(id)
+);
