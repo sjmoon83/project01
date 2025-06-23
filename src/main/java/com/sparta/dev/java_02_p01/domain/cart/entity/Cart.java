@@ -68,6 +68,7 @@ public class Cart {
 
   public void setUser(User user) {
     if (user != null) {
+      
       this.user = user;
     }
   }
